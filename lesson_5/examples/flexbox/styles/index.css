@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(53, 6, 68);
+  padding: 1em;
+  min-height: 300px;
+}
+
+.box {
+  background-color: blueviolet;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #fff;
+}
+
+.box--sm {
+  width: 100px;
+  height: 100px;
+}
+
+.box--md {
+  width: 200px;
+  height: 200px;
+}
+
+.box--lg {
+  width: 300px;
+  height: 300px;
+}
+
+/* Flex direction */
+.direction {
+  /* flex-direction: column; */
+}
+/* ============== */
+
+/* Flex wrap */
+.wrap {
+  flex-wrap: nowrap;
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+}
+/* ============== */
+
+/* Flex Flow */
+.flow {
+  /* flex-flow: row wrap; */
+  /* flex-flow: column wrap; */
+}
+/* ============== */
+
+/* Justify content */
+.justify {
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+}
+/* ============== */
+
+/* Align items */
+.align_items {
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+}
+
+.align_items .box {
+  height: initial;
+}
+/* ============== */
+
+/* Align content */
+.align_content {
+  width: 300px;
+  height: 500px;
+  flex-wrap: wrap;
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+}
+
+.align_content .box {
+  height: initial;
+}
+/* ============== */
+
+/* Flex grow */
+.grow .box {
+  /* flex-grow: 1; */
+}
+.grow .box--1 {
+  /* flex-grow: 1; */
+}
+
+.grow .box--2 {
+  /* flex-grow: 2; */
+}
+
+.grow .box--3 {
+  /* flex-grow: 1; */
+}
+
+.grow .box--4 {
+  /* flex-grow: 4; */
+}
+
+.grow .box--5 {
+  /* flex-grow: 5; */
+}
+/* ============== */
+
+/* Flex shrink */
+.shrink {
+  /* width: 400px; */
+}
+.shrink .box {
+  /* flex-grow: 1; */
+}
+.shrink .box--1 {
+  /* flex-shrink: 2; */
+}
+
+.shrink .box--2 {
+  /* flex-shrink: 0.5; */
+}
+/* ============== */
+
+/* Flax-basis */
+.basis .box--1 {
+  /* flex-basis: 200px; */
+}
+/* ============== */
+
+.flex {
+  width: 300px;
+}
+
+.flex .box--3 {
+  /* flex: 0 1 auto; */
+}
+/* ============== */
+
+/* Align-self */
+.self .box--2 {
+    align-self: center;
+}
+.self .box--3 {
+    align-self: flex-end;
+}
+.self .box--4 {
+    align-self: center;
+}
+/* ============== */

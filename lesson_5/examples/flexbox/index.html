@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Lesson 5 || flexbox</title>
+</head>
+<body>
+    <h1>Flex Container</h1>
+    <p>=========================================</p>
+    <h3>Flex direction(<i>row(default) / column)</i></h3>
+    <div class="container direction">
+        <div class="box box--sm">1</div>
+        <div class="box box--sm">2</div>
+        <div class="box box--sm">3</div>
+    </div>
+    <h3>Flex wrap(<i>nowrap(default) / wrap / wrap-reverse)</i></h3>
+    <div class="container wrap">
+        <div class="box box--md">1</div>
+        <div class="box box--md">2</div>
+        <div class="box box--md">3</div>
+        <div class="box box--md">4</div>
+        <div class="box box--md">5</div>
+        <div class="box box--md">6</div>
+        <div class="box box--md">7</div>
+        <div class="box box--md">8</div>
+        <div class="box box--md">9</div>
+    </div>
+    <h3>Flex flow(<i>flex-direction || flex-wrap</i></h3>
+    <div class="container flow">
+        <div class="box box--lg">1</div>
+        <div class="box box--lg">2</div>
+        <div class="box box--lg">3</div>
+        <div class="box box--lg">4</div>
+        <div class="box box--lg">5</div>
+    </div>
+    <h3>Justify content(<i>flex-start(default) / flex-end /center / space-between / space-around / space-evenly </i></h3>
+    <div class="container justify">
+        <div class="box box--sm">1</div>
+        <div class="box box--sm">2</div>
+        <div class="box box--sm">3</div>
+        <div class="box box--sm">4</div>
+        <div class="box box--sm">5</div>
+    </div>
+    <h3>Align items(<i>stretch(default) / flex-start / flex-end /center / baseline </i></h3>
+    <div class="container align_items">
+        <div class="box box--sm">1</div>
+        <div class="box box--sm">
+            <p>Hello</p>
+        </div>
+        <div class="box box--sm">3</div>
+        <div class="box box--sm">4</div>
+        <div class="box box--sm">5</div>
+    </div>
+    <h3>Align content(<i>stretch(default) / flex-start / flex-end / center / space-between / space-around </i></h3>
+    <div class="container align_content">
+        <div class="box box--sm">1</div>
+        <div class="box box--sm">
+            <p>Hello</p>
+        </div>
+        <div class="box box--sm">3</div>
+        <div class="box box--sm">4</div>
+        <div class="box box--sm">5</div>
+    </div>
+
+    <h1>Flex item</h1>
+    <p>=========================================</p>
+    <h3>Order</h3>
+    <div class="container order">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+
+    <h3>Flex-grow</h3>
+    <div class="container grow">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+
+    <h3>Flex-shrink</h3>
+    <div class="container shrink">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+
+    <h3>Flex-basis</h3>
+    <div class="container basis">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+
+    <h3>Flex</h3>
+    <div class="container flex">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+
+    <h3>Align-self</h3>
+    <div class="container self">
+        <div class="box box--sm box--1">1</div>
+        <div class="box box--sm box--2">2</div>
+        <div class="box box--sm box--3">3</div>
+        <div class="box box--sm box--4">4</div>
+        <div class="box box--sm box--5">5</div>
+    </div>
+</body>
+</html>
