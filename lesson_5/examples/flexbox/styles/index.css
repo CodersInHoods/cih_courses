@@ -63,13 +63,13 @@ p {
 
 /* Flex direction */
 .direction {
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 /* ============== */
 
 /* Flex wrap */
 .wrap {
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   /* flex-wrap: wrap; */
   /* flex-wrap: wrap-reverse; */
 }
@@ -77,7 +77,7 @@ p {
 
 /* Flex Flow */
 .flow {
-  /* flex-flow: row wrap; */
+  flex-flow: row wrap;
   /* flex-flow: column wrap; */
 }
 /* ============== */
@@ -152,7 +152,7 @@ p {
 
 /* Flex shrink */
 .shrink {
-  /* width: 400px; */
+  width: 400px;
 }
 .shrink .box {
   /* flex-grow: 1; */
@@ -168,7 +168,7 @@ p {
 
 /* Flax-basis */
 .basis .box--1 {
-  /* flex-basis: 200px; */
+  flex-basis: 200px;
 }
 /* ============== */
 
@@ -177,7 +177,7 @@ p {
 }
 
 .flex .box--3 {
-  /* flex: 0 1 auto; */
+  flex: 1 1 auto;
 }
 /* ============== */
 

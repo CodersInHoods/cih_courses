@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  padding: 1em;
+  margin: 1em auto;
+  background-color: rgb(44, 135, 255);
+  color: #fff;
+}
+
+.box:nth-child(2n+1) {
+    background-color: rgb(108, 6, 167);
+}
+
+/* Transform */
+.transform_item:hover {
+  /* transform: rotate(0.5turn); */
+  /* transform: rotateX(50deg); */
+  /* transform: rotateY(50deg); */
+
+  /* transform: translate(50%, 0); */
+  /* transform: translateX(2em); */
+  /* transform: translateY(20px); */
+
+  /* transform: scale(1.1, 1.5); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(0.5); */
+  /* transform: perspective(200px) rotateX(45deg); */
+}
+
+/* Transition */
+.transition_item {
+  /* transition: height .5s ease .5s; */ /* property duration timing-function delay */
+  /* transition: 0.5s ease 0.5s; */
+}
+
+.transition_item:hover {
+  /* height: 300px; */
+  /* transform: rotate(-45deg); */
+  /* background-color: rgb(72, 0, 155); */
+}
+
+/* Keyframes */
+
+@keyframes moveAround {
+  0% { transform: translate(0, 50%) }
+  25% { transform: translate(50%, 0) }
+  50% { transform: translate(0, -50%) }
+  75% { transform: translate(-50%, 0) }
+  100% { transform: translate(0, 50%) }
+}
+
+.keyframes_item {
+  /* animation-name: moveAround; */
+  animation-duration: 5s;
+  animation-timing-function: steps(20, jump-start); /* ease, ease-in, ease-out, eas-in-out, linear, step-start, step-end */
+  animation-delay: 4s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  /* animation: moveAround 5s ease-in 4s infinite reverse both running; */
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.keyframes_item:hover {
+  /* animation-play-state: paused; */
+}
+
+/* Timing */
+@keyframes slide {
+  0% {left: 0}
+  50% {left: calc(100% - 50px)}
+  100% {left: 0}
+}
+
+.animation_timing {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+}
+
+.animation_timing__track {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 1em 0;
+  background-color: rgb(108, 6, 167);
+  padding: 1em;
+}
+
+.animation_timing__track h5 {
+  color: #fff;
+  margin: 0;
+}
+
+.animation_timing__track__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  /* animation: slide 4s infinite; */
+}
+
+.animation_timing__track--1 .animation_timing__track__item {
+  /* animation-timing-function: ease; */
+}
+
+.animation_timing__track--2 .animation_timing__track__item {
+  /* animation-timing-function: ease-in; */
+}
+
+.animation_timing__track--3 .animation_timing__track__item {
+  /* animation-timing-function: ease-out; */
+}
+
+.animation_timing__track--4 .animation_timing__track__item {
+  /* animation-timing-function: eas-in-out; */
+}
+
+.animation_timing__track--5 .animation_timing__track__item {
+  /* animation-timing-function: linear; */
+}
+
+.animation_timing__track--6 .animation_timing__track__item {
+  /* animation-timing-function: step-end; */
+}
+
+.animation_timing__track--7 .animation_timing__track__item {
+  /* animation-timing-function: steps(5, start); */
+}
+
+.animation_timing__track--8 .animation_timing__track__item {
+  /* animation-timing-function: steps(10, end); */
+}
+
+.animation_timing__track--9 .animation_timing__track__item {
+  /* animation-timing-function: cubic-bezier(.25,-0.25,.75,1.25); */
+}
+
+/* Paralax */

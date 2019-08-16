@@ -131,3 +131,18 @@ nav.main_nav ul a:hover {
     padding: 0;
 }
 /* =============== */
+
+.btn {
+    background-color: #ddd;
+    width: 150px;
+    height: 50px;
+}
+
+.btn--big {
+    width: 250px;
+    height: 80px;
+}
+
+.btn--success {
+    background-color: green;
+}
