@@ -72,6 +72,10 @@ nav ul li a.active {
   background-color: rgb(39, 16, 59);
 }
 
+.transform_item {
+  transition: .3s;
+}
+
 /* Transform */
 .transform_item:hover {
   /* transform: rotate(0.5turn); */
@@ -85,7 +89,7 @@ nav ul li a.active {
   /* transform: scale(1.1, 1.5); */
   /* transform: scaleX(2); */
   /* transform: scaleY(0.5); */
-  /* transform: perspective(200px) rotateX(45deg); */
+  /* transform: perspective(300px) rotateY(45deg); */
 }
 
 /* Transition */
