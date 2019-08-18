@@ -7,19 +7,21 @@ After this course, you will be able to build well-structured layouts and have go
 
 #### Curriculum:
 
-- Session 1 – HTML Basics, CSS Part 1
+– Lesson 0 – HTML and CSS. Takeoff 🛫
 
-- Session 2 – CSS Part 2, Mini project (homework - Project)
+– Lesson 1 – HTML Basics, CSS Basics Part 1👶
 
-- Session 3 – Project review
+– Lesson 2 – CSS Basics Part 2, Mini project (homework - finish Mini project)
 
-- Session 4 – Wireframing
+– Lesson 3 – Project - let’s build together. Homework(Finish project)👨‍💻👩‍💻
 
-- Session 5 – HTML advance, Sass - introduction + practice
+– Lesson 4 – Wireframing + Mini project 🎨
 
-- Session 6 – CSS advance(homework - Final Project)
+– Lesson 5 – Advanced HTML, CSS Advance(Part 1) + Mini project🧙‍♂️🧙
 
-- Session 7 – Final Project - review
+– Lesson 6 – CSS Advance(Part 2) (homework - Final Project)
+
+– Lesson 7 – Final Project. Let's build a website together.🛬👨‍🎓👩‍🎓🍾
 
 #### Who we are:
 
