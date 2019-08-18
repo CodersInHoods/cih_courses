@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/css_grid.css">
+    <title>CSS Advance</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Transform</a></li>
+            <li><a href="./transition.html">transition</a></li>
+            <li><a href="./animation.html">keyframes/animation</a></li>
+            <li><a href="./paralax.html">paralax</a></li>
+            <li><a href="./filter.html">filter</a></li>
+            <li><a href="./text.html">text gradient</a></li>
+            <li><a href="./css_grid.html" class="active">CSS grid</a></li>
+        </ul>
+    </nav>
+    <div class="css_grid">
+        <h3>Grid-template-columns / Grid-template-rows</h3>
+        <div class="grid_container col_and_rows">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>Grid-template-areas</h3>
+        <div class="grid_container areas">
+            <div class="header">Header</div>
+            <div class="ads">Ads</div>
+            <div class="article">Article</div>
+            <footer>Footer</footer>
+        </div>
+        <h3>Grid-template</h3>
+        <div class="grid_container template">
+            <div class="item item-1">Item 1</div>
+            <div class="item item-2">Item 2</div>
+            <div class="item item-3">Item 3</div>
+            <div class="item item-4">Item 4</div>
+            <div class="item item-5">Item 5</div>
+            <div class="item item-6">Item 6</div>
+            <div class="item item-7">Item 7</div>
+            <div class="item item-8">Item 8</div>
+            <div class="item item-9">Item 9</div>
+        </div>
+        <h3>Grid-column-gap / Grid-row-gap / Grid-gap</h3>
+        <div class="grid_container gap">
+            <div class="item item-1">Item 1</div>
+            <div class="item item-2">Item 2</div>
+            <div class="item item-3">Item 3</div>
+            <div class="item item-4">Item 4</div>
+            <div class="item item-5">Item 5</div>
+            <div class="item item-6">Item 6</div>
+            <div class="item item-7">Item 7</div>
+            <div class="item item-8">Item 8</div>
+            <div class="item item-9">Item 9</div>
+        </div>
+        <h3>Justify-items</h3>
+        <div class="grid_container justify_items">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Align-items</h3>
+        <div class="grid_container align_items">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Place-items</h3>
+        <div class="grid_container place_items">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Justify-content</h3>
+        <div class="grid_container justify_content">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Align-content</h3>
+        <div class="grid_container align_content">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+
+        <h3>Place-content</h3>
+        <div class="grid_container place_content">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Grid-auto-columns</h3>
+        <div class="grid_container auto_col">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Grid-auto-rows</h3>
+        <div class="grid_container auto_row">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Grid-auto-flow</h3>
+        <div class="grid_container auto_flow">
+            <div class="item item-1">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item item-3">Item 3</div>
+            <div class="item item-4">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+        <h3>Auto fill a grid</h3>
+        <div class="grid_container auto_grid_fill">
+            <div class="item">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="item big">
+                <img src="./images/2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/3.jpg" alt="">
+            </div>
+            <div class="item big">
+                <img src="./images/4.jpg" alt="">
+            </div>
+            <div class="item vertical">
+                <img src="./images/5.jpg" alt="">
+            </div>
+            <div class="item big">
+                <img src="./images/6.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/7.jpg" alt="">
+            </div>
+            <div class="item big">
+                <img src="./images/8.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="./images/9.jpg" alt="">
+            </div>
+            <div class="item horizontal">
+                <img src="./images/10.jpg" alt="">
+            </div>
+            <div class="item horizontal">
+                <img src="./images/11.jpg" alt="">
+            </div>
+            <div class="item vertical">
+                <img src="./images/12.jpg" alt="">
+            </div>
+        </div>
+        <p>=======================</p>
+        <h1>Grid items</h1>
+        <p>=======================</p>
+        <h3>Grid-column-start / Grid-column-end / Grid-row-start / Grid-row-end</h3>
+        <div class="grid_container item_size">
+            <div class="item">Column start</div>
+        </div>
+        <h3>Grid-column / Grid-row</h3>
+        <div class="grid_container item_size item_size_col_row">
+            <div class="item">Column start</div>
+        </div>
+        <h3>Justify self</h3>
+        <div class="grid_container justify_self">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item justify">Justity self</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Align self</h3>
+        <div class="grid_container align_self">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item align">Align self</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+        <h3>Place self</h3>
+        <div class="grid_container place_self">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item place">Place self</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
+    </div>
+</body>
+
+</html>
