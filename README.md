@@ -30,3 +30,13 @@ We started our community in 2018 in London, UK and now we are an international c
 We help each other to grow and share our skills.
 
 Our main goal is to help people change their lives, and make software education affordable for everyone.
+
+
+========================
+
+License
+Copyright © 2019 codersinhoods.com
+
+The content of this repository is bound by the following licenses:
+
+The learning resources in the /curriculum including its subdirectories thereon are licensed under the <a href="./LICENSE.md">CC-BY-SA-4.0</a> license.
