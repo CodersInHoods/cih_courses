@@ -39,4 +39,4 @@ Copyright © 2019 codersinhoods.com
 
 The content of this repository is bound by the following licenses:
 
-The learning resources in the /curriculum including its subdirectories thereon are licensed under the <a href="./LICENSE.md">CC-BY-SA-4.0</a> license.
+The learning resources in the /curricula including its subdirectories thereon are licensed under the <a href="./LICENSE">CC-BY-SA-4.0</a> license.

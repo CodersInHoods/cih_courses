@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 150px;
+  min-height: 100vh;
+}
+
+h1,
+h3,
+p {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90px;
+  background-color: rgb(44, 135, 255);
+  padding: 0 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1em;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 4px;
+  min-width: 100px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(44, 135, 255);
+}
+
+nav ul li a.active {
+  background-color: #fff;
+  color: rgb(44, 135, 255);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: rgb(44, 135, 255);
+  color: #fff;
+}
+
+.box:nth-child(2n + 1) {
+  background-color: rgb(39, 16, 59);
+}
+
+.transform_item {
+  transition: 0.3s;
+}
+
+/* Transform */
+.transform_item:hover {
+  /* transform: rotate(90deg); */
+  /* transform: rotateX(50deg); */
+  /* transform: rotateY(50deg); */
+
+  /* transform: translate(50%, 0); */
+  /* transform: translateX(2em); */
+  /* transform: translateY(20px); */
+
+  /* transform: scale(1.1, 1.5); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(0.5); */
+  /* transform: perspective(300px) rotateY(45deg); */
+}
+
+/* Transition */
+.transition_item {
+  /* transition: height .5s ease .5s; */ /* property duration timing-function delay */
+  /* transition: 0.5s ease; */
+}
+
+.transition_item:hover {
+  /* height: 300px; */
+  /* transform: rotate(-45deg); */
+  /* background-color: rgb(72, 0, 155); */
+}
+
+/* Keyframes */
+
+@keyframes moveAround {
+  0% {
+    transform: translate(0, 50%);
+  }
+  25% {
+    transform: translate(50%, 0);
+  }
+  50% {
+    transform: translate(0, -50%);
+  }
+  75% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+
+.keyframes_item {
+  /* animation-name: moveAround; */
+  /* animation-duration: 2s; */
+  /* animation-timing-function: steps(20,jump-start); */ /* ease, ease-in, ease-out, eas-in-out, linear, step-start, step-end */
+  /* animation-delay: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-fill-mode: both; */
+  /* animation: moveAround 5s ease-in 1s infinite reverse both running; */
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.keyframes_item:hover {
+  /* animation-play-state: paused; */
+}
+
+/* Timing */
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 50px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.animation_timing {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+}
+
+.animation_timing__track {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 1em 0;
+  background-color: #2cb5e8;
+  padding: 1em;
+}
+
+.animation_timing__track h5 {
+  color: #fff;
+  margin: 0;
+}
+
+.animation_timing__track__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  /* animation: slide 4s infinite; */
+}
+
+.animation_timing__track--1 .animation_timing__track__item {
+  /* animation-timing-function: ease; */
+}
+
+.animation_timing__track--2 .animation_timing__track__item {
+  /* animation-timing-function: ease-in; */
+}
+
+.animation_timing__track--3 .animation_timing__track__item {
+  /* animation-timing-function: ease-out; */
+}
+
+.animation_timing__track--4 .animation_timing__track__item {
+  /* animation-timing-function: eas-in-out; */
+}
+
+.animation_timing__track--5 .animation_timing__track__item {
+  /* animation-timing-function: linear; */
+}
+
+.animation_timing__track--6 .animation_timing__track__item {
+  /* animation-timing-function: step-end; */
+}
+
+.animation_timing__track--7 .animation_timing__track__item {
+  /* animation-timing-function: steps(5, start); */
+}
+
+.animation_timing__track--8 .animation_timing__track__item {
+  /* animation-timing-function: steps(10, end); */
+}
+
+.animation_timing__track--9 .animation_timing__track__item {
+  /* animation-timing-function: cubic-bezier(0.25, -0.25, 0.75, 1.25); */
+}
+
+/* Paralax */
+.paralax_wrapper {
+  width: 100%;
+}
+
+.paralax_wrapper h3 {
+  text-align: center;
+}
+
+.paralax {
+  padding: 1em;
+  margin: 1em auto;
+  color: #fff;
+  height: 500px;
+  width: 700px;
+  overflow: hidden;
+  background: url("../images/puppy.jpg") no-repeat center center;
+  background-size: 150%;
+  background-attachment: scroll;
+}
+
+.paralax.scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.paralax.fixed {
+  background-attachment: fixed;
+}
+
+.paralax.local {
+  background-attachment: local;
+  background-size: 150%;
+}
+
+/* Filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 80%;
+  margin: 200px auto;
+  color: #fff;
+  font-size: 3em;
+  position: relative;
+}
+
+.filter::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url("../images/puppy.jpg") no-repeat center center;
+  background-size: 150%;
+  transition: 0.3s;
+}
+
+.filter:hover::before {
+  /* filter: blur(4px); */
+  /* filter: brightness(0.2); */
+  /* filter: contrast(200%); */
+  /* filter: drop-shadow(2px 4px 20px #000); */
+  /* filter: grayscale(100%); */
+  /* filter: hue-rotate(90deg); */
+  /* filter: invert(75%); */
+  /* filter: opacity(25%); */
+  /* filter: saturate(230%); */
+  /* filter: sepia(100%); */
+}
+
+.filter p {
+  position: relative;
+}
+
+/* Text gradient */
+
+.text {
+  padding: 1em;
+  font-size: 7em;
+  text-align: center;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  background-clip: border-box; /* border-box, padding-box, content-box, text */
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+}
