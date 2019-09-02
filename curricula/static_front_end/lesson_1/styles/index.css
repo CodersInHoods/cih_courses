@@ -55,3 +55,229 @@ img {
   width: 1000px;
   max-width: 90%;
 }
+
+.section_container {
+  margin: 50px auto 0;
+  width: 90%;
+}
+
+.section_container > h1,
+.section_container > p {
+  font-style: italic;
+}
+
+/* Concatenation */
+.title {
+  color: blue;
+}
+
+.medium {
+  /* font-size: 20px; */
+}
+
+.title.medium {
+  /* font-size: 30px; */
+}
+/* ============== */
+
+/* Nested styling */
+.nested_text {
+  font-size: 30px;
+}
+.nested_wrapper .nested_text {
+  background-color: aqua;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* Select a few elements */
+
+.text_1,
+.text_2,
+.text_3,
+.text_4 {
+  color: aqua;
+}
+/* ============== */
+
+/* Direct parent elements */
+.parent > p {
+  background-color: aqua
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* Placed immediately */
+.immediately_element + p {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* Preceding */
+.preceding ~ p {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* [attribute_name=”text_1”] */
+.attribute_wrapper_1 p[data-text="text_1"] {
+  background-color: aqua;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* [attribute_name~=”text”] */
+.attribute_wrapper_2 p[data-text~="text"] {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+/* [attribute_name|=”text”] */
+.attribute_wrapper_3 p[data-text|="text"] {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+/* [attribute_name^=”text”] */
+.attribute_wrapper_4 p[data-text^="text"] {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+/* [attribute_name^=”text”] */
+.attribute_wrapper_5 p[data-text$="text"] {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+.attribute_wrapper_6 p[data-text*="coders"] {
+  background-color: pink;
+  border-radius: 4px;
+  padding: 1em;
+}
+/* ============== */
+
+/* Pseudo Classes */
+.pseudo_classes a {
+  font-weight: bold;
+  font-size: 2em;
+  display: inline-block;
+  transition: .3s;
+}
+
+.pseudo_classes h3 {
+  margin-top: 2em;
+}
+
+.active a:active {
+  /* color: yellow;
+  transform: scale(0.9); */
+}
+
+#check_box:checked + label {
+  /* text-decoration: line-through; */
+}
+
+#disable_check_box:disabled + label {
+  /* color: #ddd; */
+}
+
+.first_child li:first-child {
+  /* background-color: bisque; */
+}
+
+.last_child li:last-child {
+  /* background-color: bisque; */
+}
+
+.n_child li:nth-child(2) {
+  /* background-color: bisque; */
+}
+
+.n_child li:nth-child(2n+3) {
+  /* background-color: green; */
+}
+
+.focus a:focus {
+  /* color: green; */
+}
+
+.hover h3:hover {
+  /* color: coral; */
+  /* cursor: pointer; */
+}
+
+.visited a:visited {
+  color: #ddd;
+}
+/* ============== */
+
+/* Pseudo elements */
+.pseudo_elements:before {
+  /* content: '';
+  display: block;
+  border-top: 2px solid green; */
+}
+
+.pseudo_elements:after {
+  /* content: '';
+  display: block;
+  border-top: 2px solid blue; */
+}
+
+.pseudo_elements::first-letter {
+  /* font-size: 3em;
+  font-weight: bold;
+  color: red; */
+}
+
+.pseudo_elements::first-line {
+  /* font-weight: bold;
+  color: red; */
+}
+
+input::placeholder {
+  /* color: green; */
+}
+/* ============== */
+
+/* Absolute units */
+p {
+  background-color: coral;
+}
+
+.cm {
+  /* width: 10cm; */
+}
+
+.mm {
+  /* width: 50mm; */
+}
+
+.in {
+  /* width: 5in; */
+}
+
+.px {
+  /* width: 300px; */
+}
+
+.pt {
+  /* width: 300pt; */
+}
+
+.pc {
+  /* width: 40pc;  */
+}
+/* ============== */
