@@ -253,7 +253,7 @@ input::placeholder {
 /* ============== */
 
 /* Absolute units */
-p {
+.absolute_units p {
   background-color: coral;
 }
 
@@ -279,5 +279,54 @@ p {
 
 .pc {
   /* width: 40pc;  */
+}
+/* ============== */
+
+/* Responsive units */
+
+/* html {
+  font-size: 20px;
+} */
+
+.responsive_units {
+  font-size: 14px;
+}
+
+.responsive_units h3 {
+  margin-top: 20px;
+}
+
+.em {
+  /* font-size: 2em; */
+}
+
+.ex {
+  /* font-size: 2ex; */
+}
+
+.ch {
+  /* font-size: 2ch; */
+}
+
+.rem {
+  /* font-size: 2rem; */
+}
+
+.vw_vh {
+  /* width: 50vw; */
+  /* height: 50vh; */
+  background-color: palevioletred;
+}
+
+.vmin {
+  /* width: 50vmin; */
+  /* height: 50vmin; */
+  background-color: paleturquoise;
+}
+
+.vmax {
+  /* width: 50vmax; */
+  /* height: 50vmax; */
+  background-color: peachpuff;
 }
 /* ============== */
