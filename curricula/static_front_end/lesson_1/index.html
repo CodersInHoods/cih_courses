@@ -33,7 +33,7 @@
 
     <!-- Nested styling -->
     <div class="section_container">
-        <h1>Nesting styling</h1>
+        <h1>Nested styling</h1>
         <p class="nested_text">Not nested text</p>
         <div class="nested_wrapper">
             <p class="nested_text">Nested text into div</p>
@@ -62,16 +62,16 @@
 
     <!-- Placed immediately -->
     <div class="section_container">
-        <h1>Direct parent elements</h1>
+        <h1>Placed elements</h1>
         <p class="immediately_element">First p tag</p>
         <p>Second p tag</p>
         <p>Third p tag</p>
         <p>Fourth p tag</p>
     </div>
 
-    <!-- Placed immediately -->
+    <!-- preceding elements -->
     <div class="section_container">
-        <h1>Direct parent elements</h1>
+        <h1>Preceding elements</h1>
         <div class="wrapper">
             <p class="preceding">First p tag</p>
             <p>Second p tag</p>
@@ -80,10 +80,11 @@
         </div>
         <p>Outside wrapper p tag</p>
     </div>
+    
     <!-- Attribute selectors -->
     <div class="section_container">
         <h1>Attribute selectors [attribute_name=”First name”]</h1>
-        <p>select all elements where attribute “placeholder” = “First Name”</p>
+        <p>select all elements where attribute "data-text" = “First Name”</p>
         <div class="attribute_wrapper_1">
             <p data-text="text_1">First p tag</p>
             <p data-text="text_2">Second p tag</p>
@@ -99,7 +100,7 @@
     </div>
     <div class="section_container">
         <h1>Attribute selectors [attribute_name|=”text”]</h1>
-        <p>select all elements where attribute “placeholder” starting with  “name”(divider must be “–”, ex. “name-last”)</p>
+        <p>select all elements where attribute "data-text" starting with  “name”(divider must be “–”, ex. “name-last”)</p>
         <div class="attribute_wrapper_3">
             <p data-text="text_test">First p tag - "text_test"</p>
             <p data-text="Text">Second p tag - "Text"</p>
@@ -108,7 +109,7 @@
     </div>
     <div class="section_container">
         <h1>Attribute selectors [attribute_name^=”text”]</h1>
-        <p>select all elements where attribute “placeholder” begins with  “name”</p>
+        <p>select all elements where attribute "data-text" begins with  “name”</p>
         <div class="attribute_wrapper_4">
             <p data-text="text_test">First p tag - "text_test"</p>
             <p data-text="Text">Second p tag - "Text"</p>
@@ -128,9 +129,9 @@
         <h1>Attribute selectors [attribute_name*=”coders”]</h1>
         <p>selects every element which data-text attribute contains substring “coders”</p>
         <div class="attribute_wrapper_6">
-            <p data-text="100 of coders">First p tag - "test_text"</p>
-            <p data-text="coders are everywhere">Second p tag - "Text"</p>
-            <p data-text="just coders in our team">Third p tag - "test-text"</p>
+            <p data-text="100 of coders">First p tag - "100 of coders"</p>
+            <p data-text="coders are everywhere">Second p tag - "coders are everywhere"</p>
+            <p data-text="just coders in our team">Third p tag - "just coders in our team"</p>
         </div>
     </div>
 </body>
