@@ -51,7 +51,6 @@ nav ul li a.active {
   color: rgb(44, 135, 255);
 }
 
-
 /* Based on viewport size: min-width */
 .based_on_min_width img {
   height: 200px;
@@ -266,3 +265,48 @@ nav ul li a.active {
 /* Positioning */
 
 /* ====================== */
+.positioning {
+  min-height: 150vh;
+}
+.positioning .top {
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #2c87ff;
+  padding: 2em;
+  /* position: relative; */
+}
+
+.positioning .middle {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  padding: 2em;
+  /* position: relative; */
+}
+
+.positioning .bottom {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  /* position: relative; */
+}
+
+.positioning .bottom p {
+  margin: 0;
+  font-size: 3em;
+  /* position: relative;
+  left: 50px; */
+
+  /* position: absolute; 
+  top: 20px;
+  left: 50px;*/
+
+  /* position: fixed; 
+  top: 20px;
+  left: 50px; */
+
+  /* z-index: 10;
+  position: sticky;
+  top: 20px; */
+}
