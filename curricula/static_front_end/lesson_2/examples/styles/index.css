@@ -61,7 +61,7 @@ nav ul li a.active {
   font-size: 1em;
 }
 
-/* @media all and (min-width: 764px) - is the same*/
+/* `@media all and (min-width: 764px)` - is the same*/
 @media (min-width: 764px) {
   /* .based_on_min_width img {
     height: 300px;
@@ -93,7 +93,7 @@ nav ul li a.active {
   font-size: 2em;
 }
 
-/* @media all and (max-width: 1024px) is the same */
+/* `@media all and (max-width: 1024px)` is the same */
 @media (max-width: 1024px) {
   /* .based_on_max_width img {
     height: 300px;
@@ -116,3 +116,132 @@ nav ul li a.active {
 
 /* ====================== */
 
+/* Based on viewport size: min-height */
+.based_on_min_height img {
+  height: 200px;
+}
+
+.based_on_min_height figcaption {
+  font-size: 2em;
+}
+
+/* `@media all and (min-height: 1024px)` is the same */
+@media (min-height: 400px) {
+  /* .based_on_min_height img {
+    height: 300px;
+  }
+
+  .based_on_min_height figcaption {
+    font-size: 1em;
+  } */
+}
+
+@media (min-height: 600px) {
+  /* .based_on_min_height img {
+    height: 400px;
+  }
+
+  .based_on_min_height figcaption {
+    font-size: 1.4em;
+  } */
+}
+
+/* ====================== */
+
+/* Based on viewport size: min-height */
+.based_on_max_height img {
+  height: 400px;
+}
+
+.based_on_max_height figcaption {
+  font-size: 2em;
+}
+
+/* `@media all and (max-height: 1024px)` is the same */
+@media (max-height: 600px) {
+  /* .based_on_max_height img {
+    height: 300px;
+  }
+
+  .based_on_max_height figcaption {
+    font-size: 1.4em;
+  } */
+}
+
+@media (max-height: 400px) {
+  /* .based_on_max_height img {
+    height: 200px;
+  }
+
+  .based_on_max_height figcaption {
+    font-size: 1em;
+  } */
+}
+
+/* ====================== */
+
+/* media_type_print: print */
+.media_type_print img {
+  height: 400px;
+}
+
+@media print {
+  .media_type_print figure {
+    height: 12cm;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .media_type_print img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ====================== */
+
+/* orientation */
+
+/* landscape */
+@media (orientation: landscape) {
+  .orientation figure {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .orientation img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* portrait */
+@media (orientation: portrait) {
+  .orientation figure {
+    border: 5px solid green;
+  }
+
+  .orientation figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ====================== */
+
+/* resolution */
+@media (max-resolution: 300dpi) {
+  .resolution figure img {
+    height: 300px;
+    border: 5px solid green;
+  }
+}
+
+@media (max-resolution: 100dpi) {
+  .resolution figure img {
+    height: 300px;
+    border: 5px solid red;
+  }
+}
+/* ====================== */
