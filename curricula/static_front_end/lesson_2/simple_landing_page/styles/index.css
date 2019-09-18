@@ -5,39 +5,47 @@
 
 body {
   font-size: 14px;
+  line-height: 1.4em;
 }
 
 h1 {
   font-size: 4em;
+  line-height: 1.4em;
 }
 
 h2 {
   font-size: 2.5em;
+  line-height: 1.4em;
 }
 
 h3 {
   font-size: 2em;
+  line-height: 1.4em;
 }
 
 h4 {
   font-size: 1.5em;
+  line-height: 1.4em;
 }
 
 h5 {
   font-size: 1em;
+  line-height: 1.4em;
 }
 
 h6 {
   font-size: 0.5em;
+  line-height: 1.4em;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.3em;
+    line-height: 1.4em;
 }
 
 .container {
   width: 90%;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: inherit;
   height: inherit;
@@ -121,6 +129,101 @@ main .main_details {
   left: 0;
   transform: translate(0, -50%);
   color: #fff;
+}
+
+/* ================== */
+
+/* Why */
+.why {
+    padding: 6em 0;
+}
+
+.why .reason_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reason_list__item {
+    overflow: auto;
+    margin-bottom: 5em;
+}
+
+.reason_list__item > div {
+    width: 40%;
+    margin: 0 5%;
+    position: relative;
+}
+
+.reason_list__item .image_wrapper {
+    float: left;
+    position: relative;
+}
+
+.reason_list__item .image_wrapper .img {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.reason_list__item .image_wrapper .img img {
+    position: absolute;
+    width: 130%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.3);
+}
+
+.reason_list__item .image_wrapper h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    margin: 0;
+    font-size: 7em;
+}
+
+.reason_list__item .description_wrapper {
+    float: right;
+    position: relative;
+    padding-bottom: 40%;
+}
+
+.reason_list__item:nth-child(2n) .image_wrapper {
+    float: right;
+}
+
+.reason_list__item:nth-child(2n) .description_wrapper {
+    float: left;
+}
+
+.reason_list__item .description_wrapper .description {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.reason_list__item .description_wrapper .description h2 {
+    font-size: 4em;
+    margin: 0;
+    color: #e27005;
+}
+
+.reason_list__item:nth-child(2n) .description_wrapper .description h2 {
+    color: #87a83a;
+}
+
+.reason_list__item .description_wrapper .description p {
+    font-weight: 300;
+}
+
+.reason_list__item .description_wrapper .description p:last-child {
+    margin-bottom: 0;
 }
 
 /* ================== */
