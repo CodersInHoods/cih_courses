@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta tags provide instructions for how to render your page in a browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Coders In Hoods || Lesson 2</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html" class="active">Emmet</a></li>
+        </ul>
+    </nav>
+    <h2>Navigation panel</h2>
+    <p>div.navigation>(div.logo>img[alt="image description"])+ul.nav_list>(li>a)*3</p>
+    <!-- div.navigation>(div.logo>img[alt="image description"])+ul.nav_list>(li>a)*3 -->
+
+    <h2>Card</h2>
+    <p>div.card>(div.card__img_wrapper>img)+div.card__details>h4.card__details__title+h5.card__details__subtitle+h3.card__details__price</p>
+    <!-- div.card>(div.card__img_wrapper>img)+div.card__details>h4.card__details__title+h5.card__details__subtitle+h3.card__details__price -->
+
+    <h2>List of Cards(with text)</h2>
+    <p>div.cards>(div.card>(div.card__img_wrapper>img[src=item_$.jpg alt="item $"])+div.card__details>h4.card__details__title{Title $}+h5.card__details__subtitle{Subtitle $}+h3.card__details__price{£ $.00})*5</p>
+    <!-- div.cards>(div.card>(div.card__img_wrapper>img[src=item_$.jpg alt="item $"])+div.card__details>h4.card__details__title{Title $}+h5.card__details__subtitle{Subtitle $}+h3.card__details__price{£ $.00})*5 -->
+</body>
+
+</html>
