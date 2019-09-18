@@ -1,73 +1,126 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    font-size: 14px;
+  font-size: 14px;
 }
 
-/* Custom styles */
-@keyframes back_glow_pink {
-    0% { transform: translate(10%, 10%) scale(0.8); }
-    50% { transform: translate(-15%, -15%) scale(1.2); }
-    100% { transform: translate(10%, 10%) scale(0.8); }
+h1 {
+  font-size: 4em;
 }
 
-@keyframes back_glow_blue {
-    0% { transform: translate(-10%, -10%) scale(0.8); }
-    50% { transform: translate(15%, 15%) scale(1.2); }
-    100% { transform: translate(-10%, -10%) scale(0.8); }
+h2 {
+  font-size: 2.5em;
 }
 
-.content_area {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #000;
+h3 {
+  font-size: 2em;
 }
 
-.content_area__logo {
-    position: relative;
-    width: 150px;
-    height: 150px;
+h4 {
+  font-size: 1.5em;
 }
 
-.content_area__logo img {
-    border-radius: 15px;
-    display: block;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    width: 150px;
-    z-index: 3;
+h5 {
+  font-size: 1em;
 }
 
-
-.content_area__logo:before,
-.content_area__logo:after {
-    border-radius: 15px;
-    content: "";
-    filter: blur(40px);
-    height: 100%;
-    opacity: 0.5;
-    position: absolute;
-    width: 100%;
+h6 {
+  font-size: 0.5em;
 }
 
-.content_area__logo::after {
-    animation: back_glow_blue 3s ease infinite;
-    background-color: #0ff;
-    z-index: 1;
+p {
+    font-size: 1em;
 }
 
-.content_area__logo::before {
-    animation: back_glow_pink 3s ease infinite;
-    background-color: #a622ff;
-    z-index: 2;
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: inherit;
+  height: inherit;
+  position: relative;
 }
 
-/* ======================== */
+/* Main */
+main {
+  background-color: #000;
+  min-height: 100vh;
+  position: relative;
+}
+
+main .background_wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main nav {
+  overflow: auto;
+  position: relative;
+  z-index: 10;
+}
+
+main nav ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+main nav ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+main nav ul li a {
+  display: inline-block;
+  position: relative;
+  line-height: 3em;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+main nav ul li a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid transparent;
+  /* You will have animation was lower fps(less smoother) */
+  /* width: 0; */
+
+  /* Better version(smooth animation) */
+  width: 50%;
+  transform: translate(-100%, 0);
+  /* ========== */
+  transition: 0.3s;
+  position: absolute;
+  bottom: 0;
+}
+
+main nav ul li a:hover::after,
+main nav ul li a.active::after {
+  border-bottom: 2px solid #03720c;
+  /* Lower fps(less smoother) */
+  /* width: 50%; */
+
+  /* Smooth version */
+  transform: translate(0, 0);
+}
+
+/* Read this article */
+/* https://www.paulirish.com/2012/why-moving-elements-with-translate-is-better-than-posabs-topleft/ */
+
+main .main_details {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  color: #fff;
+}
+
+/* ================== */
