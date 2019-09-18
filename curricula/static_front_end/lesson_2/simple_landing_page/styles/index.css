@@ -9,22 +9,22 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5em;
   line-height: 1.4em;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 4em;
   line-height: 1.4em;
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.4em;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 2em;
   line-height: 1.4em;
 }
 
@@ -39,8 +39,8 @@ h6 {
 }
 
 p {
-    font-size: 1.3em;
-    line-height: 1.4em;
+  font-size: 1.3em;
+  line-height: 1.4em;
 }
 
 .container {
@@ -135,95 +135,162 @@ main .main_details {
 
 /* Why */
 .why {
-    padding: 6em 0;
+  padding: 6em 0;
 }
 
 .why .reason_list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .reason_list__item {
-    overflow: auto;
-    margin-bottom: 5em;
+  overflow: auto;
+  margin-bottom: 5em;
 }
 
 .reason_list__item > div {
-    width: 40%;
-    margin: 0 5%;
-    position: relative;
+  width: 40%;
+  margin: 0 5%;
+  position: relative;
 }
 
 .reason_list__item .image_wrapper {
-    float: left;
-    position: relative;
+  float: left;
+  position: relative;
 }
 
 .reason_list__item .image_wrapper .img {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 100%;
+  overflow: hidden;
 }
 
 .reason_list__item .image_wrapper .img img {
-    position: absolute;
-    width: 130%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    filter: brightness(0.3);
+  position: absolute;
+  width: 130%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(0.3);
 }
 
 .reason_list__item .image_wrapper h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    margin: 0;
-    font-size: 7em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  margin: 0;
+  font-size: 7em;
 }
 
 .reason_list__item .description_wrapper {
-    float: right;
-    position: relative;
-    padding-bottom: 40%;
+  float: right;
+  position: relative;
+  padding-bottom: 40%;
 }
 
 .reason_list__item:nth-child(2n) .image_wrapper {
-    float: right;
+  float: right;
 }
 
 .reason_list__item:nth-child(2n) .description_wrapper {
-    float: left;
+  float: left;
 }
 
 .reason_list__item .description_wrapper .description {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }
 
 .reason_list__item .description_wrapper .description h2 {
-    font-size: 4em;
-    margin: 0;
-    color: #e27005;
+  margin: 0;
+  color: #e27005;
 }
 
 .reason_list__item:nth-child(2n) .description_wrapper .description h2 {
-    color: #87a83a;
+  color: #87a83a;
 }
 
 .reason_list__item .description_wrapper .description p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .reason_list__item .description_wrapper .description p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
+/* ================== */
+
+/* why_to_learn */
+.why_to_learn {
+  background-color: #eee;
+  padding: 5em 0;
+}
+
+.why_to_learn .container > h2,
+.why_to_learn .container > h4 {
+  text-align: center;
+  margin: 0;
+}
+
+.why_to_learn .container > h2 {
+  margin: 0;
+  color: #2f2f2f;
+}
+
+.why_to_learn .container > h4 {
+  color: #6b6b6b;
+  margin-top: 0.5em;
+}
+
+.why_to_learn .cards_list {
+  list-style: none;
+  padding: 0;
+  margin: 4em 0;
+  overflow: auto;
+  padding: 1em 0;
+}
+
+.cards_list .card_wrapper {
+  width: 33.33333%;
+  display: inline-block;
+  float: left;
+}
+
+.cards_list .card_wrapper .card {
+  width: 80%;
+  padding: 5%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 1px 4px 8px rgba(0,0,0,0.2), 1px 4px 8px rgba(0,0,0,0.1)
+}
+
+.card .card__image_wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+}
+
+.card .card__image_wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+}
+
+.card h4 {
+  font-size: 1.6em;
+}
+
+.card p {
+    font-weight: 300;
+}
 /* ================== */
