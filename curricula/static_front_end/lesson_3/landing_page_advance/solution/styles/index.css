@@ -805,6 +805,13 @@ main .content h3 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .reviews_list__item {
+    margin: 8em auto;
+    padding: 7em 1em 2em;
+  }
+}
+
 .reviews_list__item .avatar {
   width: 30%;
   padding-bottom: 30%;
