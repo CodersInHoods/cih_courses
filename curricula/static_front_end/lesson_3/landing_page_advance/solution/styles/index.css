@@ -112,6 +112,8 @@ main::after {
 
 main nav {
   overflow: auto;
+  position: relative;
+  z-index: 20;
 }
 
 main nav .nav_list {
@@ -194,30 +196,246 @@ main .content h3 {
 }
 
 .agreement ul li .icon_wrapper {
-    background-color: #C2ADA7;
-    width: 130px;
-    height: 130px;
-    position: relative;
-    border-radius: 50%;
-    margin: 0 auto;
+  background-color: #c2ada7;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .agreement ul li:nth-child(2) .icon_wrapper {
-    background-color: #EBF2F5;
+  background-color: #ebf2f5;
 }
 
 .agreement ul li:nth-child(3) .icon_wrapper {
-    background-color: #f5cbaf;
+  background-color: #f5cbaf;
 }
 
 .agreement ul li .icon_wrapper img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 /* ================== */
+
+/* Experience */
+.experience {
+  padding: 3em 0;
+  background-color: #002b45;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(0, -50%);
+  width: 70%;
+  padding-bottom: 70%;
+  border-radius: 50%;
+  border: 4px dashed rgba(255, 255, 255, 0.7);
+}
+
+.experience h2 {
+  color: #fff;
+  max-width: 800px;
+  position: relative;
+  z-index: 5;
+}
+
+.experience h4 {
+  color: #f5cbaf;
+  position: relative;
+  z-index: 5;
+}
+
+.experience .content .images {
+  width: 56%;
+  padding-bottom: 60%;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+
+.experience .content .images::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  background-color: #f5cbaf;
+}
+
+.experience .content .images::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20%;
+  width: 50%;
+  background-color: #a5c8d8;
+}
+
+.experience .content .images img {
+  position: relative;
+  top: 2em;
+  width: 80%;
+  position: absolute;
+  z-index: 5;
+}
+
+.experience .content .images .rect {
+  position: absolute;
+  top: 40%;
+  right: 2em;
+  height: 50%;
+  width: 35%;
+  background-color: #4f5b8f;
+}
+
+.experience .content .details {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  padding: 2%;
+  color: #fff;
+}
+
+.experience .content .details h3 span {
+  color: #f5cbaf;
+}
+
+.experience .content .details p {
+  font-weight: 300;
+}
 /* ================== */
+
+/* confidence */
+.confidence {
+  padding: 3em 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.confidence::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  z-index: -1;
+  transform: translate(0, -50%);
+  width: 60%;
+  padding-bottom: 60%;
+  border-radius: 50%;
+  border: 4px dashed rgba(0, 43, 69, 0.7);
+}
+
+.confidence h2 {
+  color: #002b45;
+  max-width: 800px;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 0;
+}
+
+.confidence h2 span {
+  color: #f5cbaf;
+}
+
+.confidence .content .details {
+  display: inline-block;
+  vertical-align: top;
+  width: 56%;
+  padding: 3% 0;
+  color: #5b5b5b;
+}
+
+.confidence .content .details p {
+  font-weight: 300;
+  width: 60%;
+  margin-bottom: 3em;
+}
+
+.confidence .content .images {
+  width: 40%;
+  padding-bottom: 40%;
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+}
+
+.confidence .content .buttons a {
+  display: inline-block;
+  width: 40%;
+  height: 3em;
+  max-width: 150px;
+  background-color: #002b45;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 3em;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.confidence .content .buttons a:first-child {
+    margin-right: 1em;
+    position: relative;
+}
+
+.confidence .content .buttons a:first-child::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 40px;
+    background-color: #f5cbaf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(45deg) translate(-10%, 100%);
+}
+
+.confidence .content .images::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60%;
+  background-color: #f5cbaf;
+}
+
+.confidence .content .images::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  height: 20%;
+  width: 50%;
+  background-color: #002b45;
+}
+
+.confidence .content .images img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  position: absolute;
+  z-index: 5;
+}
 /* ================== */
 /* ================== */
 /* ================== */
