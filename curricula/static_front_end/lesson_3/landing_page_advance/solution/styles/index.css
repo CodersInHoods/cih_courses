@@ -373,38 +373,6 @@ main .content h3 {
   z-index: 5;
 }
 
-.confidence .content .buttons a {
-  display: inline-block;
-  width: 40%;
-  height: 3em;
-  max-width: 150px;
-  background-color: #002b45;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 500;
-  line-height: 3em;
-  text-align: center;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-.confidence .content .buttons a:first-child {
-    margin-right: 1em;
-    position: relative;
-}
-
-.confidence .content .buttons a:first-child::after {
-    content: '';
-    display: block;
-    width: 70px;
-    height: 40px;
-    background-color: #f5cbaf;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: rotate(45deg) translate(-10%, 100%);
-}
-
 .confidence .content .images::before {
   content: "";
   display: block;
@@ -436,6 +404,214 @@ main .content h3 {
   position: absolute;
   z-index: 5;
 }
+
+.confidence .content .buttons a {
+    display: inline-block;
+    width: 90%;
+    height: 3em;
+    max-width: 150px;
+    background-color: #002b45;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 3em;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  
+  .confidence .content .buttons a:first-child {
+    margin-right: 1em;
+    position: relative;
+  }
+  
+  .confidence .content .buttons a:first-child::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 40px;
+    background-color: #f5cbaf;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(45deg) translate(-10%, 100%);
+  }
 /* ================== */
+
+/* reviews */
+.reviews {
+  background-color: #ebf2f5;
+  padding: 3em 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews::before {
+    content: '';
+    display: block;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    border: 2px dashed #002b45;
+    bottom: -20%;
+    left: -20%;
+    position: absolute;
+}
+
+.reviews::after {
+    content: '';
+    display: block;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    border: 2px dashed #002b45;
+    top: 10%;
+    right: -10%;
+    position: absolute;
+}
+
+.reviews h2 {
+    color: #002b45;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.reviews h2 span {
+    color: #f5cbaf;
+}
+
+.reviews_list {
+    position: relative;
+    z-index: 10;
+    list-style: none;
+    padding: 5em 0 0;
+    text-align: center;
+}
+
+.reviews_list__item {
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+    background-color: #fff;
+    padding: 5em 1em 2em;
+    margin: 0 2% 5em;
+    position: relative;
+    color: #3C3C3C;
+}
+
+.reviews_list__item .avatar {
+    width: 30%;
+    padding-bottom: 30%;
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.reviews_list__item .avatar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
+
+.reviews_list__item > p {
+    margin: 0;
+}
+
+.reviews_list__item .rating {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.reviews_list__item .rating li {
+    display: inline-block;
+}
+
+.reviews .buttons {
+    text-align: center;
+}
+
+.reviews .buttons a {
+    display: inline-block;
+    width: 90%;
+    height: 3em;
+    max-width: 200px;
+    background-color: #002b45;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 3em;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+}
 /* ================== */
+
+/* footer */
+footer {
+    background-color: #002b45;
+    padding-bottom: 3em; 
+}
+
+footer .socials {
+    text-align: center;
+    list-style: none;
+    padding: 2em 0;
+    margin: 0
+}
+
+footer .socials li {
+    display: inline-block;
+}
+
+footer .socials li a {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+footer .socials li img {
+    height: 20px;
+}
+
+footer hr {
+    margin: 0;
+}
+
+footer .contacts {
+    text-align: center;
+    margin: 3em 0;
+}
+
+footer .contacts a {
+    display: inline-block;
+    margin: 0 1.5em;
+    text-decoration: none;
+    color: #F5CBAF;
+}
+
+footer .contacts a:hover {
+    text-decoration: underline;
+}
+
+footer .contacts a img {
+    position: relative;
+    height: 2em;
+    transform: translate(-10px, 0.625em);
+}
+
+footer > p,
+footer > h5 {
+    text-align: center;
+    color: #fff;
+}
+
+footer > p {
+    font-weight: 300;
+}
 /* ================== */
