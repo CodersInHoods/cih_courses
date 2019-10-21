@@ -80,6 +80,7 @@ nav ul li a.active {
 .transform_item:hover {
   /* transform: rotate(90deg); */
   /* transform: rotateX(50deg); */
+  /* transform: rotateX(50deg) rotateY(-50deg); */
   /* transform: rotateY(50deg); */
 
   /* transform: translate(50%, 0); */

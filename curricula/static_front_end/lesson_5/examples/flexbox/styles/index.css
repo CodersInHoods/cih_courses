@@ -125,6 +125,20 @@ p {
 }
 /* ============== */
 
+/* Order */
+.order {
+
+}
+
+.order .box:nth-child(3) {
+  order: 1;
+}
+
+.order .box:first-child {
+  order: 2;
+}
+/* ============== */
+
 /* Flex grow */
 .grow .box {
   /* flex-grow: 1; */
@@ -155,14 +169,14 @@ p {
   width: 400px;
 }
 .shrink .box {
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 .shrink .box--1 {
-  /* flex-shrink: 2; */
+  flex-shrink: 2;
 }
 
 .shrink .box--2 {
-  /* flex-shrink: 0.5; */
+  flex-shrink: 0.5;
 }
 /* ============== */
 
@@ -186,9 +200,9 @@ p {
   align-self: center;
 }
 .self .box--3 {
-  align-self: flex-end;
+  /* align-self: flex-end; */
 }
 .self .box--4 {
-  align-self: center;
+  /* align-self: center; */
 }
 /* ============== */

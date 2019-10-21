@@ -171,7 +171,7 @@
     grid-column-gap: 10px;
     grid-auto-flow: column; /* need to define flow to column */
     grid-template-rows: repeat(4, 1fr); /* and define row height */
-    grid-auto-columns: 200px;
+    /* grid-auto-columns: 200px; */
   }
   
   .auto_row {

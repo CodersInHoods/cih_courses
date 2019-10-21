@@ -181,8 +181,8 @@ img {
 }
 
 .active a:active {
-  /* color: yellow;
-  transform: scale(0.9); */
+  color: yellow;
+  transform: scale(0.9);
 }
 
 #check_box:checked + label {
@@ -224,22 +224,22 @@ img {
 /* ============== */
 
 /* Pseudo elements */
-.pseudo_elements:before {
+.pseudo_elements::before {
   /* content: '';
   display: block;
   border-top: 2px solid green; */
 }
 
-.pseudo_elements:after {
+.pseudo_elements::after {
   /* content: '';
   display: block;
   border-top: 2px solid blue; */
 }
 
 .pseudo_elements::first-letter {
-  /* font-size: 3em;
+  font-size: 3em;
   font-weight: bold;
-  color: red; */
+  color: red;
 }
 
 .pseudo_elements::first-line {
