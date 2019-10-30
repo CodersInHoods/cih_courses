@@ -41,11 +41,13 @@
 //   }
 
 
+/*-------------Exercise 1-------------*/
 
 /* Given you have string "0123456789" please use a while loop to iterate over it.
 The goal is to have with 2 variables called numOdd and numEven with values of how many items in that
 string times 3 are even and how many odd, these values should be numbers. 
 at each iteration we should log out to the console a string which says
+"<CURRENT ITEM IN THE STRING> times 3 is even" or "<CURRENT ITEM IN THE STRING> times 3 is odd"
 */
 
 
@@ -56,6 +58,7 @@ at each iteration we should log out to the console a string which says
 
 
 
+/*-------------Exercise 2-------------*/
 
 /* 
 Consider this array 
