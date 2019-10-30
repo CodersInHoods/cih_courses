@@ -1,10 +1,14 @@
 
+// var varHelloWorld = "Hello"
 // console.log(varHelloWorld)
 // var varHelloWorld = "Hello World"
+// console.log(varHelloWorld)
 
 
-// console.log(letHelloWorld)
-// let letHelloWorld = "Hello World"
+// const constHelloWorld = "Hello World"
+// console.log(constHelloWorld)
+
+
 
 
 // var functionScoped = "hi"
@@ -14,12 +18,13 @@
 
 // let blockScoped = "hi"
 // {
-// 	let blockScoped = "bye"
+//     let blockScoped = "bye"
+//     console.log(blockScoped)
 // }
 
 
 // Conditional statement
-// const meaningOfLife = 42
+// const meaningOfLife = "34567890"
 
 // if (meaningOfLife === 42) {
 //     console.log("Thanks for all the fish")
@@ -35,21 +40,53 @@
 // let text = ""
 // let loopNum = 0
 // while (text.length < 50) {
+//     debugger
 //     loopNum++
-// 	   console.log(text.length)
+// 	console.log(text.length)
 //     text += ` The number is ${loopNum}`
-//   }
+// }
 
 
 /*-------------Exercise 1-------------*/
 
-/* Given you have string "0123456789" please use a while loop to iterate over it.
-The goal is to have with 2 variables called numOdd and numEven with values of how many items in that
+/* Given you have string "0123456789" 
+please use a while loop to iterate over it.
+The goal is to have 2 variables called numOdd and numEven with values of how many items in that
 string times 3 are even and how many odd, these values should be numbers. 
 at each iteration we should log out to the console a string which says
 "<CURRENT ITEM IN THE STRING> times 3 is even" or "<CURRENT ITEM IN THE STRING> times 3 is odd"
 */
 
+// const stringOfNums = "0123456789" 
+// let numEven = 0
+// let numOdd = 0
+// let i = 0
+
+// while(i != stringOfNums.length) {
+//     if ((stringOfNums[i] * 3) % 2 === 0){
+//         numEven++
+//         console.log(`${stringOfNums[i]} times 3 is even`)    
+//     }
+//     else {
+//         numOdd++
+//         console.log(`${stringOfNums[i]} times 3 is odd`) 
+//     }  
+//     i++
+// }
+
+
+
+// const stringOfNums = "0123456789" 
+// let numEven = 0
+// let numOdd = 0
+// let i = 0
+
+// while(i != stringOfNums.length) {
+//     let bool = (stringOfNums[i] * 3) % 2 === 0
+//     bool ? numEven++ : numOdd++
+//     console.log(`${stringOfNums[i]} times 3 is ${bool ? "even": "odd"}`)    
+//     i++
+// }
 
 
 
