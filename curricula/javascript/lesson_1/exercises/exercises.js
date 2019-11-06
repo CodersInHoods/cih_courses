@@ -89,11 +89,6 @@ Consider this array
 [2,1,0,44],
 [78,9,7,1]]
 
-[["oops",7,"oops",0],
-[-10,0,0,0],
-["1","7","6","0"],
-[78,9,7.4,3,1]]
-
 As you notice there are several arrays within this one. 
 Please find a way to produce a new array from this 
 which should be made up of arrays. Those arrays should
@@ -121,3 +116,68 @@ The resulting array should look like this:
 Keep in mind the nested arrays are not the same length and 
 not all the values are of same type.
 */
+
+//Solution with nested loop
+const nestedArray = [[8,7,56,2],
+[20,4,4,5],
+[2,1,0,44],
+[78,9,7,1]]
+
+minMax = []
+
+for(let i = 0; i < nestedArray.length; i++) {
+	let smallest 
+    let largest 
+    
+	for(let j = 0; j < nestedArray[i].length; j++){
+        if (nestedArray[i][j] < smallest || smallest === undefined) {
+			smallest = nestedArray[i][j]
+        }
+        if(nestedArray[i][j] > largest || largest === undefined) {
+            largest = nestedArray[i][j]
+        }
+    }
+    
+	minMax[i] = [smallest, largest]
+}
+
+// Solution with map
+const minMax = nestedArray.map(item => {
+	return [Math.min(...item), Math.max(...item)]
+})
+
+//Solution with nested loops
+nestedArray = [["oops",7,"oops",0],
+[-10,0,0,0],
+["1","7","6","0"],
+[78,9,7.4,3,1]]
+
+const minMax = []
+
+for(let i = 0; i < nestedArray.length; i++) {
+	let smallest 
+    let largest 
+    
+	for(let j = 0; j < nestedArray[i].length; j++){
+        if(typeof arr[i][j] !== "number") continue
+        
+        if (nestedArray[i][j] < smallest || smallest === undefined) {
+			smallest = nestedArray[i][j]
+        }
+        if(nestedArray[i][j] > largest || largest === undefined) {
+            largest = nestedArray[i][j]
+        }
+    }
+    
+	minMax[i] = smallest !== undefined ? [smallest, largest] : "No numbers found"
+}
+
+nestedArray.map(item => {
+	const filteredArr = item.filter(i => typeof i === "number" )
+	if (filteredArr.length === 0){
+        return "No numbers found"
+    }
+	return [Math.min(...filteredArr), Math.max(...filteredArr)]
+})
+
+
