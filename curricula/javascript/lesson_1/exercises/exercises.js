@@ -23,6 +23,61 @@ it returns undefined.
 - filter returns a new array filled with all array elements that pass a test,
 if nothing passes the test it returns an empty array.
 */
+const myCollection = [1,2,3,4,5]
+
+
+const myForEach = (collection, callback) => {
+    for(let i = 0; i < collection.length; i++) {
+        callback(collection[i])
+    }
+}
+
+myForEach(myCollection, (item) => {
+    console.log(item)
+})
+
+const myMap = (collection, callback) => {
+    const newCollection = []
+    for(let i = 0; i < collection.length; i++) {
+        newCollection.push(callback(collection[i]))
+    }
+    return newCollection
+}
+
+myMap(myCollection, (item) => {
+    return item + 1
+})
+//returns [2,3,4,5,6]
+
+const myFind = (collection, callback) => {
+    for(let i = 0; i < collection.length; i++) {
+        if(callback(collection[i])){
+            return collection[i]
+        }
+    }
+}
+
+myFind(myCollection, (item) => {
+    return item > 2
+})
+// returns 3
+
+const myFilter = (collection, callback) => {  
+    const newCollection = []
+    for(let i = 0; i < collection.length; i++) {
+        if(callback(collection[i])){
+            newCollection.push(collection[i])
+        }
+    }
+    return newCollection
+}
+
+myFilter(myCollection, (item) => {
+    return item > 2
+})
+
+//returns [3,4,5]
+
 
 
 /*-------------Exercise 2-------------*/

@@ -4,19 +4,19 @@ const numbers = [1,3,6,10,15,17,30]
 const fizzBuzz = []
 // let i = 0
 
-// while(i < num.length) {
-// 	if(num[i] % 3 === 0 && num[i] % 5 === 0) {
+// while(i < numbers.length) {
+// 	if(numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
 // 	    fizzBuzz[i] = "FizzBuzz"
 //     }	
 
-//     else if(num[i] % 3 === 0){
+//     else if(numbers[i] % 3 === 0){
 //         fizzBuzz[i] = "Fizz"
 //     }
-//     else if(num[i] % 5 === 0){
+//     else if(numbers[i] % 5 === 0){
 //         fizzBuzz[i] = "Buzz"
 //     }
 //     else{
-//         fizzBuzz[i] = num[i]
+//         fizzBuzz[i] = numbers[i]
 //     }
 
 //     i++
@@ -114,7 +114,7 @@ const car = {
 
 // Object.values(car)
 //  // => ["Audi", "A6", Array(2), {…}, 240, 5]
-// Object.entires(car)
+// Object.entries(car)
 // => 
 /*[["make", "Audi"]
 ["model", "A6"]
