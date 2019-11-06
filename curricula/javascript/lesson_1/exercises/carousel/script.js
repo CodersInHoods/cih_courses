@@ -51,9 +51,19 @@ browser console to see what you have available.
 
 /*Please write your code here*/
 
-
-
-
+readBooks = []
+const read = (book) => {
+    if (readBooks.find((readBook) => readBook.title === book.volumeInfo.title )) return
+    const bookDetails = {
+        title: book.volumeInfo.title,
+        image: book.volumeInfo.imageLinks.thumbnail,
+        authors: book.volumeInfo.authors,
+        averageRating: book.volumeInfo.averageRating ? book.volumeInfo.averageRating : 'Rating not available',
+        epub: book.accessInfo.epub ? book.accessInfo.epub.isAvailable : false,
+        shortDescription: `${book.volumeInfo.description.split('.')[0]}.`
+    }
+        readBooks.push(bookDetails)
+}
 
 
 

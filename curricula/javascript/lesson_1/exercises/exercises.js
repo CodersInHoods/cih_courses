@@ -25,9 +25,6 @@ if nothing passes the test it returns an empty array.
 */
 
 
-
-
-
 /*-------------Exercise 2-------------*/
 
 /* 
