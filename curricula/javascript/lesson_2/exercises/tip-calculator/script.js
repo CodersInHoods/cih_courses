@@ -43,10 +43,11 @@ serviceQuality.forEach(sq => {
     serviceQualitySelection.append(selectionItem)
 })
 
-serviceQualitySelection.style.display = 'block'
+serviceQualitySelection.style = 'block'
 
 /* Set up an element to eventually contain the results of tip calculation */
 const result = document.createElement('div')
+result.style.fontSize = "10em"
 
 /* Set up button element which the user can interact with to calculate the tip */
 const calculate = document.createelement('button')
